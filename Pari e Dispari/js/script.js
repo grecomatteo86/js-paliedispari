@@ -35,7 +35,10 @@ if (pariDispari == 'pari') {
 
 //4. l'utente inserisce un numero da 1 a 5
 var numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
-console.log('il numero scelto dall\'utente è ' + numeroUtente);
+alert('il numero da te scelto è ' + numeroUtente);
+
+var numeroCpu = numeroRandom ();
+alert('il numero scelto dal computer è ' + numeroCpu);
 
 
 
