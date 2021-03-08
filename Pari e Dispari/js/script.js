@@ -15,11 +15,23 @@ function numeroRandom () {
 function sommaNumeri (num1, num2) {
   var somma = parseInt(num1 + num2);
   console.log('la somma dei due numeri è ' + somma);
+  if (somma % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 //3. l'utente sceglie tra pari o dispari
 var pariDispari = prompt('scegli: pari o dispari');
-console.log('l\'utente ha scelto ' + pariDispari);
+
+if (pariDispari == 'pari') {
+  pariDispari = true;
+  alert('hai scelto pari, allora in computer sceglierà dispari');
+} else {
+  pariDispari = false;
+  alert('hai scelto dispari, allora in computer sceglierà pari');
+}
 
 //4. l'utente inserisce un numero da 1 a 5
 var numeroUtente = parseInt(prompt('inserisci un numero da 1 a 5'));
