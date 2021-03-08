@@ -49,3 +49,10 @@ if (sommaNumeri(numeroUtente,numeroCpu)) {
   alert("la somma dei due numeri è dispari!");
   var totale = false;
 }
+
+// 6. comparo la scelta dell'utente e la variabile 'totale': se hanno lo stesso valore, l'utente vince, altrimenti perde
+if ( pariDispari == totale ) {
+  alert('hai vinto');
+} else {
+  alert('hai perso');
+}
