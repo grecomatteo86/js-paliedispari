@@ -11,8 +11,8 @@ function numeroRandom () {
   return Math.floor(Math.random() * 6);
 }
 
-//2. imposto una funzione che somma due numeri
-function sommaNumeri (num1, num2) {
+//2. imposto una funzione che mi dice se la somma tra due numeri è pari
+function sumIsEven (num1, num2) {
   var somma = parseInt(num1 + num2);
   console.log('la somma dei due numeri è ' + somma);
   if (somma % 2 == 0) {
@@ -42,7 +42,7 @@ alert('il numero scelto dal computer è ' + numeroCpu);
 
 
 //5. invoco la funzione sommaNumeri per sommare numeroUtente e numeroCpu. se pari allora 'totale' è true, altrimenti è false
-if (sommaNumeri(numeroUtente,numeroCpu)) {
+if (sumIsEven(numeroUtente,numeroCpu)) {
   alert("la somma dei due numeri è pari!");
   var totale = true;
 } else {

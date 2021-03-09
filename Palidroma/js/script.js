@@ -28,4 +28,5 @@ function palindroma (parola) {
 
 }
 
+//6. invoco la funzione
 palindroma (parola);
