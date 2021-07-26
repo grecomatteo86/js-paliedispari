@@ -11,8 +11,8 @@ if (userChoise == 'even') {
   alert('you have chosen odd, then the computer will choose even');
 }
 var userNumber = parseInt(prompt('choose a number from 1 to 5'));
-while (isNaN(userNumber)) {
-  alert("Please enter a NUMBER");
+while (isNaN(userNumber) || userNumber > 5 || userNumber < 1) {
+  alert("Please enter a NUMBER from 1 to 5");
   userNumber = parseInt(prompt('choose a number from 1 to 5'));
 }
 alert('you have chosen ' + userNumber);
